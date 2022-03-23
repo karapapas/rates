@@ -7,8 +7,8 @@ app.use(express.json())
 
 app.set("view engine", "ejs")
 
-const userRouter = require("./routes/users")
+const controller = require("./routes/controller")
 
-app.use("/users", userRouter)
+app.use("/controller", controller)
 
 app.listen(3000)
